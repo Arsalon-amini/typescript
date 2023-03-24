@@ -1,11 +1,8 @@
 
-function calculateTax(income: number, taxYear?: number): number {
-    if(taxYear < 2022)
-        return income * 1.2;
-    if(income < 50_000)
-        return income * 1.2;
+let employee: {
+    id: number, 
+    name: string
+} = { id: 1, name: "arsalon"}
 
-    return 0;
-}
+employee.name = "john"
 
-calculateTax(100_000, 2022) 
